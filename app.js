@@ -29,7 +29,9 @@ app.get("/bugs/:number_of_bugs", (req, res) => {
 });
 
 
-const pokemon = require("./pokemon.json");
+const pokemon = require("./models/pokemon.json");
+
+// http://localhost:8888/pokemon/search?name=Bulbasaur
 
 app.get("/pokemon/search", (req, res) => {
     const { name } = req.query
