@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 
+
 app.get("/", (req, res) => {
     res.send("Welcome 99 Pokemon");
 });
@@ -29,7 +30,7 @@ app.get("/bugs/:number_of_bugs", (req, res) => {
 });
 
 
-const pokemon = require("./models/pokemon.json");
+const pokemon = require("../models/pokemon.json");
 
 // http://localhost:8888/pokemon/search?name=Bulbasaur
 

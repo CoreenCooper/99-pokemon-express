@@ -1,7 +1,7 @@
 const request = require("supertest");
 
 const app = require("./app");
-const pokemon = require("./models/pokemon.json");
+const pokemon = require("../models/pokemon.json");
 
 describe("app", () => {
   describe("/", () => {

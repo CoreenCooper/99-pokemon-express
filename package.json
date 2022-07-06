@@ -4,7 +4,7 @@
     "express": "^4.18.1"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "node src/server.ts",
     "test": "jest"
   },
   "name": "99-pokemon-express",
