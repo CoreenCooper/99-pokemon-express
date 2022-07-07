@@ -16,7 +16,7 @@ Here, we will build 3 small projects in one to keep learning express.
 **.env**
 
 ```
-PORT=8888
+PORT=3001
 ```
 
 > _Note_: Remember to `git add`, `git commit` and `git push` regularly
@@ -37,7 +37,7 @@ Make a route that takes 3 parameters in the URL
 
 so that if the url is
 
-http://localhost:8888/jumping/joyous/jellybean
+http://localhost:3001/jumping/joyous/jellybean
 
 The response will be
 
@@ -95,7 +95,7 @@ console.log(pokemon[0]);
 - make a route `/pokemon/:indexOfArray` that returns 1 pokemon at that array position
   - if the array position is invalid or there is no pokemon at that position, instead send `sorry, no pokemon found at /pokemon[indexOfArray]` - where `[indexOfArray]` is the value from the URL that the user has entered
 - make a route /pokemon/search - where a user can add a query parameter
-  such as http://localhost:8888/pokemon/search?name=oddish
+  such as http://localhost:3001/pokemon/search?name=oddish
 
   which will respond with
 

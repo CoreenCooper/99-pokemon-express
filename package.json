@@ -4,7 +4,7 @@
     "express": "^4.18.1"
   },
   "scripts": {
-    "start": "node src/server.ts",
+    "start": "npx tsc && node build/server.js",
     "test": "jest"
   },
   "name": "99-pokemon-express",
@@ -14,6 +14,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/express": "^4.17.13",
     "jest": "^27.0.3",
     "supertest": "^6.1.3"
   }
