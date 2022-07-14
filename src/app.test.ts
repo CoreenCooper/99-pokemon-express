@@ -1,39 +1,39 @@
-// const request = require("supertest");
+const request = require("supertest");
 
-// const appTest = require("./app");
-// const pokemon = require("../models/pokemon.json");
+const appTest = require("./app");
+const pokemon = require("../models/pokemon.json");
 
-// describe("appTest", () => {
-//   describe("/", () => {
-//     it("sends a welcome message", async () => {
-//       const response = await request(appTest).get("/");
+describe("appTest", () => {
+  describe("/", () => {
+    it("sends a welcome message", async () => {
+      const response = await request(appTest).get("/");
 
-//       expect(response.text).toEqual("Welcome 99 Pokemon");
-//     });
-//   });
+      expect(response.text).toEqual("Welcome 99 Pokemon");
+    });
+  });
 
-//   describe("/bugs", () => {
-//     it("sends an h1 message", async () => {
-//       const response = await request(appTest).get("/bugs");
+  describe("/bugs", () => {
+    it("sends an h1 message", async () => {
+      const response = await request(appTest).get("/bugs");
 
-//       expect(response.text).toContain("99 little bugs in the code");
-//     });
-//   });
+      expect(response.text).toContain("99 little bugs in the code");
+    });
+  });
 
-//   describe("/bugs/:numberOfBugs", () => {
-//     it("sends an error link when too many bugs are requested", async () => {
-//       const response = await request(appTest).get(`/bugs/200`);
+  describe("/bugs/:numberOfBugs", () => {
+    it("sends an error link when too many bugs are requested", async () => {
+      const response = await request(appTest).get(`/bugs/200`);
 
-//       expect(response.text).toContain("Too many bugs!! Start over!");
-//     });
+      expect(response.text).toContain("Too many bugs!! Start over!");
+    });
 
-//     it("sends a 'next' link when a small enough number of bugs is requested", async () => {
-//       const response = await request(appTest).get(`/bugs/199`);
+    it("sends a 'next' link when a small enough number of bugs is requested", async () => {
+      const response = await request(appTest).get(`/bugs/199`);
 
-//       expect(response.text).toContain("199 little bugs in the code");
-//       expect(response.text).toMatch(/href.*201.*Pull one down\, patch it around/);
-//     });
-//   });
+      expect(response.text).toContain("199 little bugs in the code");
+      expect(response.text).toMatch(/href.*201.*Pull one down\, patch it around/);
+    });
+  });
 
 //   describe("/pokemon", () => {
 //     it("sends the list of Pokemon", async () => {
@@ -88,4 +88,4 @@
 //       );
 //     });
 //   });
-// });
+});
