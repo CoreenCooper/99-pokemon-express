@@ -1,6 +1,7 @@
 "use strict";
 const server = require("./app");
-const PORT = 3001;
+require("dotenv").config();
+const PORT = process.env.PORT;
 server.listen(PORT, () => {
     console.log(`🔊 Listening on http://localhost:${PORT}`);
 });
