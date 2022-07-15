@@ -31,6 +31,12 @@ app.get("/pokemon/search", (req, res) => {
         }
     }));
 });
+app.get("/pokemon/:indexOfArray", (req, res) => {
+    const { indexOfArray } = req.params;
+    pokemonList[indexOfArray]
+        ? res.json(pokemonList[indexOfArray])
+        : res.send(`Sorry, no pokemon found at ${indexOfArray}`);
+});
 app.get("/:verb/:adjective/:noun", (req, res) => {
     const { verb, adjective, noun } = req.params;
     res.send(`Congratulations on starting a new project called ${verb}-${adjective}-${noun}`);

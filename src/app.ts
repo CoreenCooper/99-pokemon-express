@@ -58,12 +58,12 @@ app.get("/pokemon/search", (req: Request, res: Response) => {
   );
 });
 
-// app.get("/pokemon/:indexOfArray", (req: Request, res: Response) => {
-//     const { indexOfArray } = req.params;
-//     pokemon[indexOfArray]
-//      ? res.json(pokemon[indexOfArray]
-//      : res.send(`Sorry, no pokemon found at ${indexOfArray}`)
-// });
+app.get("/pokemon/:indexOfArray", (req: Request, res: Response) => {
+    const { indexOfArray } = req.params;
+    pokemonList[indexOfArray]
+     ? res.json(pokemonList[indexOfArray])
+     : res.send(`Sorry, no pokemon found at ${indexOfArray}`)
+});
 
 app.get("/:verb/:adjective/:noun", (req: Request, res: Response) => {
   const { verb, adjective, noun } = req.params;
