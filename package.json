@@ -4,7 +4,7 @@
     "express": "^4.18.1"
   },
   "scripts": {
-    "start": "npx tsc && node build/server.js",
+    "start": "npx tsc && nodemon build/server.js",
     "test": "jest"
   },
   "name": "99-pokemon-express",

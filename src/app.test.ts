@@ -35,13 +35,13 @@ describe("appTest", () => {
     });
   });
 
-//   describe("/pokemon", () => {
-//     it("sends the list of Pokemon", async () => {
-//       const response = await request(appTest).get("/pokemon");
+  // describe("/pokemon", () => {
+  //   it("sends the list of Pokemon", async () => {
+  //     const response = await request(appTest).get("/pokemon");
 
-//       expect(JSON.parse(response.text)).toEqual(pokemon);
-//     });
-//   });
+  //     expect(JSON.parse(response.text)).toEqual(pokemon);
+  //   });
+  // });
 
 //   describe("/pokemon/search", () => {
 //     it("sends an empty array when the Pokemon isn't found", async () => {

@@ -1,4 +1,3 @@
-"use strict";
 const server = require("./app");
 require("dotenv").config();
 const PORT = process.env.PORT;
